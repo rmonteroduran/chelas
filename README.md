@@ -1,3 +1,12 @@
+## <img src="https://user-images.githubusercontent.com/103367542/170897064-db2db840-0d26-402a-b3bc-3c3f27df5f4f.png" width="35"> Coderhouse
+## <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" width="35"> ReactJS
+## 🏫 Comisión 38065
+## 👨🏻‍🎓 Rodrigo Montero Durán
+## 👁 Proyecto Integrador
+- Chelas: E-Commerce de cervezas.
+### ✏️ Creación de aplicación (11/08/2022)
+- Creación con CRA.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
