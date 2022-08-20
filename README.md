@@ -4,6 +4,11 @@
 ## 👨🏻‍🎓 Rodrigo Montero Durán
 ## 👁 Proyecto Integrador
 - Chelas: E-Commerce de cervezas.
+### ✏️ Incorporación componentes (20/08/2022)
+- Incorporación NavBar.
+- Incorporación CartWidget.
+- Incorporación ItemListContainer.
+- Incorporación Footer.
 ### ✏️ Creación de aplicación (11/08/2022)
 - Creación con CRA.
 
