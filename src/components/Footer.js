@@ -1,15 +1,15 @@
 const Footer = () => {
     return (
-        <footer class="footer">
-            <div class="derechos">
+        <footer className="footer">
+            <div className="derechos">
                 <div>
-                    <p><strong class="copy">&copy; </strong>chelas! 2022 - Todos los derechos reservados</p>
+                    <p><strong className="copy">&copy; </strong>chelas! 2022 - Todos los derechos reservados</p>
                 </div>
-                <div class="redes">
-                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                <div className="redes">
+                    <a href="https://www.instagram.com/"><i className="fa-brands fa-instagram"></i></a>
+                    <a href="https://es-la.facebook.com/"><i className="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i className="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/"><i className="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </footer>

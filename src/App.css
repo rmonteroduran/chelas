@@ -71,17 +71,29 @@
   color: #ffc107;
 }
 
-/* CONTAINER */
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem;
+.nav-link.dropdown-toggle {
+  font-size: larger;
 }
 
-.container i {
-  font-size: xx-large;
+/* CONTAINER */
+.card {
+  width: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.card-img-top {
+  width: 5rem;
+}
+
+.item-count {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* FOOTER */
