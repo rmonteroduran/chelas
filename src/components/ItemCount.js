@@ -55,13 +55,13 @@ const ItemCount = ({stock, initial}) => {
         <div>
             <div className='card-body item-count'>
                 <div className="card-text">
-                    <button className="btn btn-warning" onClick={qtyRest}>-</button>
+                    <button className="btn btn-warning qty" onClick={qtyRest}>-</button>
                 </div>
                 <div className="card-text">
-                    <h3>{qty}</h3>
+                    <h5>{qty}</h5>
                 </div>
                 <div className="card-text">
-                    <button className="btn btn-warning" onClick={qtyAdd}>+</button> 
+                    <button className="btn btn-warning qty" onClick={qtyAdd}>+</button> 
                 </div>
             </div>
             <div>

@@ -1,14 +1,22 @@
-import ItemCount from "./ItemCount";
+import { useState, useEffect } from "react";
+import ItemList from "./ItemList";
+import cargaStock from "../utils/promises/cargaStock";
+import {data} from '../utils/data/data';
 
 const ItemListContainer = () => {
+    const [products, setProducts] = useState([]); //hook (estado)
+
+    //componentDidMount
+    useEffect(() => {
+        cargaStock(data)
+            .then(result => setProducts(result))
+            .catch(err => console.log(err))
+    }, [])
+
     return (
-            <div className="card">
-                <img src="andes-ipa.jpeg" className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <h5 className="card-title">Andes IPA</h5>
-                    <ItemCount stock={5} initial={1} />
-                </div>
-            </div>
+        <div className="products">
+        <ItemList items={products} />
+        </div>
     )
 };
 

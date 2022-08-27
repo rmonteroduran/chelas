@@ -40,7 +40,7 @@
 
 /* NAVBAR */
 .carro {
-  padding: 0 2rem;
+  margin-left: 1rem;
   color: black;
   display: flex;
   flex-direction: row;
@@ -71,11 +71,14 @@
   color: #ffc107;
 }
 
-.nav-link.dropdown-toggle {
-  font-size: larger;
+/* CONTAINER */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-/* CONTAINER */
 .card {
   width: 18rem;
   display: flex;
@@ -84,10 +87,11 @@
   margin: 1rem;
   padding: 0.5rem;
   text-align: center;
+  border-radius: 3rem;
 }
 
 .card-img-top {
-  width: 5rem;
+  width: 10rem;
 }
 
 .item-count {
@@ -96,12 +100,17 @@
   gap: 1rem;
 }
 
+.qty {
+  background-color: transparent;
+  border-color: #ced4da;
+}
+
 /* FOOTER */
 .footer {
-  background-color: #ffc107;
+  background-color: rgba(0, 0, 0, 0.03);
   color:  rgba(0, 0, 0, 0.75);
   text-align: center;
-  height: auto;
+  height: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,10 +133,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

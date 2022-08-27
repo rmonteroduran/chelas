@@ -4,15 +4,21 @@
 ## 👨🏻‍🎓 Rodrigo Montero Durán
 ## 👁 Proyecto Integrador
 - Chelas: E-Commerce de cervezas.
-### ✏️ Componentes II (23/08/2022)
-- Incorporación ItemCount.
+### ✏️ Catálogo con MAPS y Promises (27/08/2022)
+- Componente ItemList.
+- Componente Item.
+- Promise cargaStock.
+- Enriquecimiento de productos en array data.
+- Incorporación MAP.
+### ✏️ Contador con botón (23/08/2022)
+- Componente ItemCount.
 - Incorporación Toastify.
-### ✏️ Componentes I (20/08/2022)
-- Incorporación NavBar.
-- Incorporación CartWidget.
-- Incorporación ItemListContainer.
-- Incorporación Footer.
-### ✏️ Creación de aplicación (11/08/2022)
+### ✏️ Crea tu landing (20/08/2022)
+- Componente NavBar.
+- Componente CartWidget.
+- Componente ItemListContainer.
+- Componente Footer.
+### ✏️ Crear la App utilizando el CLI (11/08/2022)
 - Creación con CRA.
 
 # Getting Started with Create React App
