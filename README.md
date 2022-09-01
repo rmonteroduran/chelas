@@ -4,6 +4,10 @@
 ## 👨🏻‍🎓 Rodrigo Montero Durán
 ## 👁 Proyecto Integrador
 - Chelas: E-Commerce de cervezas.
+
+### ✏️ Detalle de Producto (01/09/2022)
+- Componente ItemDetailContainer.
+- Componente ItemDetail.
 ### ✏️ Catálogo con MAPS y Promises (27/08/2022)
 - Componente ItemList.
 - Componente Item.
