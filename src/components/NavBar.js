@@ -1,4 +1,5 @@
 import CartWidget from "./CartWidget";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
@@ -7,31 +8,19 @@ const NavBar = () => {
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
-            <a className="navbar-brand logo" href="#">che<i className="fa-solid fa-beer-mug-empty"></i>as</a>
+            <a className="navbar-brand logo" href="/">che<i className="fa-solid fa-beer-mug-empty"></i>as</a>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 barra">
-                    <li>
-                        <a className="nav-link" href="#" role="button">Nosotros</a>                  
-                    </li>
+                    <li><Link className="nav-link" to="nosotros/">Nosotros</Link></li>
                     <li className="nav-item dropdown">
-                        <a className="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                        <a className="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cervezas</a>
                         <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">Nacionales</a></li>
-                                <ul>
-                                    <li><a className="dropdown-item" href="#">Industriales</a></li>
-                                    <li><a className="dropdown-item" href="#">Artesanales</a></li>
-                                </ul>
-                            <li><a className="dropdown-item" href="#">Importadas</a></li>
-                                <ul>
-                                    <li><a className="dropdown-item" href="#">Americanas</a></li>
-                                    <li><a className="dropdown-item" href="#">Europeas</a></li>
-                                    <li><a className="dropdown-item" href="#">Asiáticas</a></li>
-                                </ul>
+                            <li><Link className="dropdown-item" to="category/1">Nacionales</Link></li>
+                            <li><Link className="dropdown-item" to="category/2">Americanas</Link></li>
+                            <li><Link className="dropdown-item" to="category/3">Europeas</Link></li>
                         </ul>
                     </li>
-                    <li>
-                        <a className="nav-link" href="#" role="button">Contacto</a>                  
-                    </li>
+                    <li><Link className="nav-link" to="contacto/">Contacto</Link></li>
                 </ul>
                 <form className="d-flex" role="search">
                     <input className="form-control me-2" type="search" placeholder="Buscar chelas" aria-label="Search" />

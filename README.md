@@ -5,6 +5,10 @@
 ## 👁 Proyecto Integrador
 - Chelas: E-Commerce de cervezas.
 
+### ✏️ Primera Entrega del Proyecto Final (03/09/2022)
+- Navegación ItemList <> ItemDetail y categorias.
+- Mejoras en visualización css.
+- Incorporación secciones Nosotros, Contacto, Acerca de, Términos y Condiciones, Politicas de Privacidad.
 ### ✏️ Detalle de Producto (01/09/2022)
 - Componente ItemDetailContainer.
 - Componente ItemDetail.

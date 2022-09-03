@@ -2,16 +2,18 @@ import { useEffect, useState } from 'react';
 import ItemDetail from './ItemDetail';
 import cargaStock from "../utils/promises/cargaStock";
 import {data} from '../utils/data/data';
+import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState({});
+    const { id } = useParams();
 
     //componentDidMount
     useEffect(() => {
-        cargaStock(data[9])
+        cargaStock(data.find(item => item.id == id))
             .then(result => setProduct(result))
             .catch(err => console.log(err))
-    }, [])
+    }, [id])
 
     return (
         <div>

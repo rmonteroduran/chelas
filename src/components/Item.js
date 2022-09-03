@@ -1,16 +1,17 @@
-import ItemCount from "./ItemCount";
+import { Link } from "react-router-dom";
 
 const Item = (props) => {
     return (
         <>
         <div className="card">
-            <img src={props.image} className="card-img-top" alt="..." />
-            <div className="card-body">
-                <p className="card-title">{props.name}</p>
-                <h5 className="card-text">${props.price}</h5>
-                <p className="card-text"><small class="text-muted">{props.description}</small></p>
-                <ItemCount stock={props.stock} initial={1} />
-            </div>
+            <Link to={`/item/${props.id}`}>
+                <img src={props.image} className="card-img-top" alt="..." />
+                <i className="fa fa-search"></i>
+            </Link>
+                <div className="card-body">
+                    <p className="card-title">{props.name}</p>
+                    <p className="card-text"><small className="text-muted">{props.format}</small></p>
+                </div>
         </div>
         </>
     )
