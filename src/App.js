@@ -1,17 +1,20 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import ItemListContainer from './components/ItemListContainer';
-import ItemDetailContainer from './components/ItemDetailContainer';
-import Nosotros from './components/Nosotros';
-import Contacto from './components/Contacto';
-import Privacidad from './components/Privacidad';
-import Terminos from './components/Terminos';
-import Acerca from './components/Acerca';
+import ItemListContainer from './components/containers/ItemListContainer';
+import ItemDetailContainer from './components/containers/ItemDetailContainer';
+import Nosotros from './components/pages/Nosotros';
+import Contacto from './components/pages/Contacto';
+import Privacidad from './components/pages/Privacidad';
+import Terminos from './components/pages/Terminos';
+import Acerca from './components/pages/Acerca';
+import Cart from './components/Cart';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import CartContextProvider from './components/context/CartContext';
 
 const App = () => {
   return (
+    <CartContextProvider>
     <BrowserRouter>
     <NavBar />
     <Routes>
@@ -23,9 +26,11 @@ const App = () => {
       <Route path='/terminos/' element={<Terminos />} />
       <Route path='/privacidad/' element={<Privacidad />} />
       <Route path='/acerca/' element={<Acerca />} />
+      <Route path='/cart/' element={<Cart />} />
     </Routes>
     <Footer />
     </BrowserRouter>
+    </CartContextProvider>
   )
 };
 

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const ItemCount = ({stock, initial}) => {
+const ItemCount = ({stock, initial, onAdd}) => {
     const [qty, setQty] = useState(initial);
 
     const qtyAdd = () => {
@@ -22,54 +22,31 @@ const ItemCount = ({stock, initial}) => {
     }
 
     const qtyRest = () => {
-        if (qty>1) {
+        if (qty>0) {
             setQty(qty-1);
-        };
-    }
-
-    const onAdd = () => {
-        if (qty===1) {
-            toast.warn("Se agregó " + qty + " chela al carrito!", {
-                position: "top-center",
-                autoClose: 3000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                });
-        } else {
-            toast.success("Se agregaron " + qty + " chelas al carrito!", {
-                position: "top-center",
-                autoClose: 3000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                });
         };
     }
 
     return (
         <div>
             <div className='card-body item-count'>
-                <div className="card-text">
-                    <button className="btn btn-warning qty" onClick={qtyRest}>-</button>
-                </div>
-                <div className="card-text">
-                    <h5>{qty}</h5>
-                </div>
-                <div className="card-text">
-                    <button className="btn btn-warning qty" onClick={qtyAdd}>+</button> 
-                </div>
+            <div className="card-text">
+                <button className="btn btn-warning qty" onClick={qtyRest}>-</button>
+            </div>
+            <div className="card-text">
+                <h5>{qty}</h5>
+            </div>
+            <div className="card-text">
+                <button className="btn btn-warning qty" onClick={qtyAdd}>+</button> 
+            </div>
             </div>
             <div>
-                <button className="btn btn-warning" onClick={onAdd}>Agregar</button> 
+                <button className="btn btn-warning" onClick={() => onAdd(qty)}>Agregar</button> 
             </div>
             <ToastContainer/>
         </div>
     )
+
 };
 
 export default ItemCount;

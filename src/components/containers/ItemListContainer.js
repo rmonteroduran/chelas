@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import ItemList from "./ItemList";
-import cargaStock from "../utils/promises/cargaStock";
-import {data} from '../utils/data/data';
+import ItemList from "../ItemList";
+import cargaStock from "../../utils/promises/cargaStock";
+import {data} from '../../utils/data/data';
 import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
@@ -11,7 +11,7 @@ const ItemListContainer = () => {
     //componentDidMount
     useEffect(() => {
         if (id) {
-            cargaStock(data.filter(item => item.category == id))
+            cargaStock(data.filter(item => item.category === parseInt(id)))
                 .then(result => setProducts(result))
                 .catch(err => console.log(err))
         } else {

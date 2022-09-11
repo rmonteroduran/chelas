@@ -4,7 +4,14 @@
 ## 👨🏻‍🎓 Rodrigo Montero Durán
 ## 👁 Proyecto Integrador
 - Chelas: E-Commerce de cervezas.
-
+### ✏️ CartContext (11/09/2022)
+- Incorporación CartContext.
+- Incorporacion metodos addItem, removeItem, removeAll, cartList.
+- Validación de duplicados.
+- Organización contenido de proyecto.
+### ✏️ Sincronizar counter (11/09/2022)
+- Evento onAdd de Agregar al carrito dirige a carrito y almacena valor.
+- Diseño Cart.
 ### ✏️ Primera Entrega del Proyecto Final (03/09/2022)
 - Navegación ItemList <> ItemDetail y categorias.
 - Mejoras en visualización css.
