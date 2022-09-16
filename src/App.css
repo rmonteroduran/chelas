@@ -441,11 +441,28 @@ CARRITO
 --------------------------------------------------------------*/
 .carrito {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   padding: 2rem;
+}
+
+.carrito-empty {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.carrito-detalle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .item-carrito {
@@ -468,6 +485,46 @@ CARRITO
 .buttons-carrito {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.carrito-resumen {
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid #eee;
+  border-radius: 20px;
+  padding: 2rem;
+  color: #494389;
+}
+
+.pedido {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pedido-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*--------------------------------------------------------------
+LOADING
+--------------------------------------------------------------*/
+.spinner-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0;
 }

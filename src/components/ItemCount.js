@@ -41,7 +41,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
             </div>
             </div>
             <div>
-                <button className="btn btn-warning" onClick={() => onAdd(qty)}>Agregar</button> 
+            <button className="btn btn-warning" onClick={() => onAdd(qty)} disabled={!stock || !qty}>Agregar</button>         
             </div>
             <ToastContainer/>
         </div>

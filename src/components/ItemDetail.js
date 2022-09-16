@@ -3,7 +3,8 @@ import { toast } from 'react-toastify';
 import { useState, useContext } from "react";
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import { CartContext } from './context/CartContext'
+import { CartContext } from './context/CartContext';
+import Loader from "./Loader";
 
 const ItemDetail = (props) => {
   const [itemCount, setItemCount] = useState(0);
@@ -42,6 +43,10 @@ const ItemDetail = (props) => {
         cart.addItem(props.item, count);
       }
     }
+
+  if (!props.item.id) {
+    return <Loader />
+  }
 
   return (
     <>

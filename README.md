@@ -4,6 +4,15 @@
 ## 👨🏻‍🎓 Rodrigo Montero Durán
 ## 👁 Proyecto Integrador
 - Chelas: E-Commerce de cervezas.
+### ✏️ Item Collection (16/09/2022)
+- Conexión con Google Firestore
+- Eliminación de promesa y conexion con firestore de ItemDetailContainer y ItemListContainer.
+### ✏️ Cart View (16/09/2022)
+- Actualización de cantidad de items en CartWidget.
+- Incorporación de resumen de pedido con subtotal, iva y total.
+- Detalle de items agrupados y boton de eliminar para cada uno.
+- Mensaje de carro vacio cuando no hay items.
+- Botones de navegacion para seguir comprando, vaciar carrito y finalizar compra.
 ### ✏️ CartContext (11/09/2022)
 - Incorporación CartContext.
 - Incorporacion metodos addItem, removeItem, removeAll, cartList.
