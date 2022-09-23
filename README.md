@@ -4,7 +4,7 @@
 ## 👨🏻‍🎓 Rodrigo Montero Durán
 ## 👁 Proyecto Integrador
 - Chelas: E-Commerce de cervezas.
-## 💻 Tecnologías
+## 💻 Tecnologías aplicadas
 - React JS
 - html
 - css
