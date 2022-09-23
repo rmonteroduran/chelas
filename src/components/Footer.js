@@ -24,8 +24,8 @@ const Footer = () => {
                 <div className="apps">
                     <h4>Nuestras apps</h4>
                     <div>
-                        <a href="https://www.apple.com/la/app-store/"><img src="./apple.svg" alt="App Store" /></a>
-                        <a href="https://play.google.com/store?hl=es"><img src="./google.svg" alt="Google Play" /></a>
+                        <a href="https://www.apple.com/la/app-store/"><img src='../apple.svg' alt="App Store" /></a>
+                        <a href="https://play.google.com/store?hl=es"><img src="../google.svg" alt="Google Play" /></a>
                     </div>
                 </div>
             </div>

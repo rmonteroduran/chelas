@@ -1,7 +1,27 @@
 import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
+import { SearchContext } from '../context/SearchContext';
+import { useContext } from "react";
 
 const NavBar = () => {
+    const search = useContext(SearchContext);
+
+    const handleChange = e => {
+        search.setBusqueda(e.target.value)
+        filtrar(e.target.value)
+    }
+
+    const filtrar = (terminoBusqueda) => {
+        var resultadoBusqueda = search.searchProducts.filter((el) => {
+            if (el.name.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())) {
+                return el;
+            } else {
+                return "";
+            }
+        });
+        search.setProducts(resultadoBusqueda)
+    }
+
     return (
     <nav className="navbar sticky-top navbar-expand-md bg-light">
         <div className="container-fluid">
@@ -23,8 +43,7 @@ const NavBar = () => {
                     <li><Link className="nav-link" to="contacto/">Contacto</Link></li>
                 </ul>
                 <form className="d-flex" role="search">
-                    <input className="form-control me-2" type="search" placeholder="Buscar chelas" aria-label="Search" />
-                    <button className="btn btn-warning" type="submit">Buscar</button>
+                    <input className="form-control me-2" type="search" placeholder="Buscar chelas" aria-label="Search" onChange={handleChange} />
                 </form>
             </div>
             <div className="navbar-brand">

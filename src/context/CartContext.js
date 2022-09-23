@@ -12,18 +12,18 @@ const CartContextProvider = ({children}) => {
         if (exist) {
             exist.qty = exist.qty + qty
             setCartLenght(cartLenght + qty);
-            setCartBill(cartBill + item.price);
+            setCartBill(cartBill + (item.price*qty));
         } else {
             let itemForCart = {
                 ...item,
                 qty
             };
             setCartList([
-                ...cartList, //spread operator
+                ...cartList,
                 itemForCart
             ]);
             setCartLenght(cartLenght + qty);
-            setCartBill(cartBill + item.price);
+            setCartBill(cartBill + (item.price*qty));
         }
     };
 
@@ -32,7 +32,7 @@ const CartContextProvider = ({children}) => {
         let qty = itemList.map(item => item.qty)
         let price = itemList.map(item => item.price)
         setCartLenght(cartLenght - qty);
-        setCartBill(cartBill - price);
+        setCartBill(cartBill - (price*qty));
         let newCartList = cartList.filter(item => item.id !== id);
         setCartList(newCartList);
     };

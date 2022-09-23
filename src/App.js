@@ -1,20 +1,22 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import ItemListContainer from './components/containers/ItemListContainer';
-import ItemDetailContainer from './components/containers/ItemDetailContainer';
-import Nosotros from './components/pages/Nosotros';
-import Contacto from './components/pages/Contacto';
-import Privacidad from './components/pages/Privacidad';
-import Terminos from './components/pages/Terminos';
-import Acerca from './components/pages/Acerca';
+import ItemListContainer from './containers/ItemListContainer';
+import ItemDetailContainer from './containers/ItemDetailContainer';
+import Nosotros from './pages/Nosotros';
+import Contacto from './pages/Contacto';
+import Privacidad from './pages/Privacidad';
+import Terminos from './pages/Terminos';
+import Acerca from './pages/Acerca';
 import Cart from './components/Cart';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import CartContextProvider from './components/context/CartContext';
+import CartContextProvider from './context/CartContext';
+import SearchContextProvider from './context/SearchContext';
 
 const App = () => {
   return (
     <CartContextProvider>
+    <SearchContextProvider>
     <BrowserRouter>
     <NavBar />
     <Routes>
@@ -30,6 +32,7 @@ const App = () => {
     </Routes>
     <Footer />
     </BrowserRouter>
+    </SearchContextProvider>
     </CartContextProvider>
   )
 };

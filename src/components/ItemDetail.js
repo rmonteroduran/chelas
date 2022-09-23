@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import { useState, useContext } from "react";
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import { CartContext } from './context/CartContext';
+import { CartContext } from '../context/CartContext';
 import Loader from "./Loader";
 
 const ItemDetail = (props) => {
