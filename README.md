@@ -10,6 +10,7 @@
 - css
 - jsx
 - firestore
+## <img src="https://user-images.githubusercontent.com/103367542/191903709-bbe64510-07ec-44ec-908b-3f1e9c6a8cc6.gif" width="1080" heigth="720"> 
 ## ✏️ Etapas de Desarrollo
 ### ✏️ Entrega proyecto final (23/09/2022)
 - Optimización de código.
