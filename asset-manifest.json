@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/chelas/static/css/main.331c542d.css",
-    "main.js": "/chelas/static/js/main.2525d258.js",
+    "main.js": "/chelas/static/js/main.afd9d09c.js",
     "index.html": "/chelas/index.html",
     "main.331c542d.css.map": "/chelas/static/css/main.331c542d.css.map",
-    "main.2525d258.js.map": "/chelas/static/js/main.2525d258.js.map"
+    "main.afd9d09c.js.map": "/chelas/static/js/main.afd9d09c.js.map"
   },
   "entrypoints": [
     "static/css/main.331c542d.css",
-    "static/js/main.2525d258.js"
+    "static/js/main.afd9d09c.js"
   ]
 }
