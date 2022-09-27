@@ -81,7 +81,7 @@ const Cart = () => {
         <div className='item-carrito'>No hay productos</div>
         <div className='buttons-carrito'>
         <button className='btn btn-warning' onClick={cart.removeAll} disabled>Vaciar carrito</button>
-        <Link to='/'><button className='btn btn-warning'>Seguir comprando</button></Link>
+        <Link to='/chelas/'><button className='btn btn-warning'>Seguir comprando</button></Link>
         <button className='btn btn-warning' disabled>Finalizar Compra</button>
         </div>
     </div>
@@ -103,7 +103,7 @@ const Cart = () => {
             }
             <div className='buttons-carrito'>
                 <button className='btn btn-warning' onClick={cart.removeAll}>Vaciar carrito</button>
-                <Link to='/'><button className='btn btn-warning'>Seguir comprando</button></Link>               
+                <Link to='/chelas/'><button className='btn btn-warning'>Seguir comprando</button></Link>               
             </div>
             </div>
             <div className="carrito-resumen">
